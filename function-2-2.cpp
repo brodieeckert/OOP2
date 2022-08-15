@@ -8,12 +8,10 @@ int max_sub_sum(int *nums,int length){
             new_sum = 0;      
             for(int j = k; j <= i;j++){
                 new_sum = nums[j] + new_sum;
-                std::cout << nums[j] << " ";
             }
             if(max_sum < new_sum){
                     max_sum = new_sum;
                 }
-            std::cout << std::endl;
         }
     }
     
