@@ -12,9 +12,4 @@ int main(){
     string second[n][2];
 
     string_2d_copy(first,second,n);
-
-
-
-
-    
 }
