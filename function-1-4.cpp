@@ -8,4 +8,5 @@ void copy_doubles(double *old_array[],double *new_array[],int length){
         *(new_array+i) = *(old_array+i);
         cout << *(new_array + i) << " ";
     }  
+    return;
 }
