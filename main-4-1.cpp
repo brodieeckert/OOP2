@@ -2,7 +2,6 @@
 
 extern int *readNumbers();
 extern void printNumbers(int *numbers, int length);
-extern int *reverseArray(int *numbers1, int length);
 extern bool equalsArray(int *numbers1,int *numbers2, int length);
 extern int secondSmallestSum(int *numbers, int length);
 
@@ -11,7 +10,7 @@ int main(){
     int *a = readNumbers();
     int b = secondSmallestSum(a,length);
 
-    std::cout << b << std::endl;
+    std::cout << "Second Smallest Sum is: "<< b << std::endl;
 
     delete [] a;
 

@@ -20,8 +20,18 @@ void printNumbers(int *numbers, int length){
 }
 
 int secondSmallestSum(int *numbers, int length){
-    int min = numbers[0];
-    int second_min = numbers[0];
+    int min = 0;
+    int second_min = 0;
+    for(int i = 0; i< length;i++){
+        if (min < numbers[i]){
+            min = numbers[i];
+        }
+        if (min < numbers[i]){
+            second_min = numbers[i];
+        }
+
+    }
+   
 
     for(int i = 0; i < length;i++){
         int sub_sum = 0;
