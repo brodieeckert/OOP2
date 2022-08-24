@@ -1,22 +1,25 @@
 #include <iostream>
+#include "function-4-1.h"
 
-void passenger_board(){
-    if(this.bus_count < this.capacity){
-        BusCounter.bus_count++;
-    }
-};  // person tries to board the bus increments bus_count by one if bus_count < capacity
+void BusCounter::passenger_exit()
+{
+	if(bus_count >0){
+    bus_count--;
+  }
+}	
+int BusCounter::get_count()
+{
+	return bus_count;
+}
 
-
-
-  void passenger_exit(){
-if(this.bus_count >0){
-        this.bus_count--;
-    }
-  };   // person exits bus - decrements bus_count by one if bus has more than zero people.
-
-
+void BusCounter::passenger_board()
+{
+	if(bus_count < capacity){
+    bus_count++;
+  }
+}	
 
 
   int get_count(){
-    return(this.bus_count);
+
   }; // returns the current count of people in the bus. 
