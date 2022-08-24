@@ -8,5 +8,5 @@ int fishing_fine_lookup(int over){
     if (over <=30 && over < 45 ){return 1500;}
     if (over >=45 ){return 1690;}
 
-return 10000000;
+return 0;
 }
