@@ -24,5 +24,5 @@ Person Airplane::getCoPilot(){
     return this->_CoPilot;
 }
 void Airplane::printDetails(){
-
+    cout << this->_callsign << endl;
 }
