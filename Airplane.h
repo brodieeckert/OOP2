@@ -9,6 +9,8 @@ class Airplane{
         Person _CoPilot;
         Person _Pilot;
 
+
+
     public:
         Airplane(string callsign, Person thePilot, Person theCoPilot);
         void setPilot(Person thePilot);

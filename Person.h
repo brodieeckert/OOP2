@@ -7,6 +7,8 @@ class Person{
         int _salary;
         string _name;
 
+
+
     public:
         Person():Person(0,""){};
         Person(int mySalary, string myName);
