@@ -1,3 +1,5 @@
+main:
+
 capybara:
 	g++ main-1-1.cpp Capybara.h Capybara.cpp
 	./a.exe
@@ -8,4 +10,5 @@ wagon:
 	g++ main-2-1.cpp Wagon.h Wagon.cpp Capybara.cpp
 	./a.exe
 airplane:
-	g++ main-2-2.cpp Airplane.h Person.cpp  Airplane.cpp
+	g++ main-2-2.cpp Airplane.h  Person.h Person.cpp Airplane.cpp 
+	./a.exe

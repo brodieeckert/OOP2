@@ -13,9 +13,15 @@ int main(){
     Person b(1,"B");
     Person c(1,"C");
     Airplane A("SENDY",a,b);
-    A.setCoPilot(a);
-    A.setPilot(c);
 
     A.printDetails();
+
+    
+    A.setPilot(c);
+    A.setCoPilot(a);
+
+    A.printDetails();
+
+    
     
 }
