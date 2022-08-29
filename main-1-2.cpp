@@ -6,18 +6,10 @@ using namespace std;
 
 
 int main(){
-    Person a;
-    Person b;
-    Person c;
-    Person d;
-    a.setSalary(1);
-    a.setName("A");
-    b.setSalary(2);
-    b.setName("B");
-    c.setSalary(3);
-    c.setName("C");
-    d.setSalary(4);
-    d.setName("D");
+    Person a(1,"A");
+    Person b(1,"B");
+    Person c(1,"C");
+    Person d(1,"D");
 
     cout << "Name and Salary: " << a.getName() << " " << a.getSalary() << endl;
     cout << "Name and Salary: " << b.getName() << " " << b.getSalary() << endl;

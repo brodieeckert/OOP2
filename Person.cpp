@@ -3,12 +3,6 @@
 
 using namespace std;
 
-Person::Person()
-{
-    _name = "?";
-    _salary = 0;
-}
-
 int Person::getSalary(){
     return this->_salary;
 }
