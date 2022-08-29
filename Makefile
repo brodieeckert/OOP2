@@ -7,3 +7,5 @@ person:
 wagon:
 	g++ main-2-1.cpp Wagon.h Wagon.cpp Capybara.cpp
 	./a.exe
+airplane:
+	g++ main-2-2.cpp Airplane.h Person.cpp  Airplane.cpp
