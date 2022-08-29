@@ -10,7 +10,6 @@ Wagon::Wagon(){
 bool Wagon::addCapybara(Capybara newCapy){
     
     if(number >=4){
-        cout << " CART FULL \n";
         return false;
         }
         else{    
@@ -30,6 +29,6 @@ void Wagon::emptyWagon(){
 }
 void Wagon::printCapybaras(){
     for(int i = 0; i<number;i++){
-        cout << "Name and age: " << seat[i].getName() << " " << seat[i].getAge() << endl;
+        cout << seat[i].getName() << " " << seat[i].getAge() << endl;
     }
 }
