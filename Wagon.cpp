@@ -8,14 +8,15 @@ Wagon::Wagon(){
 };
 
 bool Wagon::addCapybara(Capybara newCapy){
-    number++;
-    cout << number << endl;
+    
     if(number >=4){
-        cout << " your an idiot \n";
+        cout << " CART FULL \n";
         return false;
         }
         else{    
+            
             seat[number] = newCapy;
+            number++;
         }
     
 
