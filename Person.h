@@ -8,7 +8,7 @@ class Person{
         string _name;
 
     public:
-
+        Person():Person(0,""){};
         Person(int mySalary, string myName);
         void setName(string myName);
         string getName();
