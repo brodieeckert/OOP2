@@ -3,6 +3,11 @@
 
 using namespace std;
 
+Person::Person(int salary, string name){
+    this->_name=name;
+    this->_salary = salary;
+}
+
 int Person::getSalary(){
     return this->_salary;
 }
