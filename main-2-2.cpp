@@ -16,6 +16,6 @@ int main(){
     A.setCoPilot(a);
     A.setPilot(c);
 
-    A.printDetails;
+    A.printDetails();
     
 }
