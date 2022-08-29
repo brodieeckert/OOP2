@@ -12,6 +12,7 @@ int main(){
     Airplane A("SENDY",a,b);
     A.setCoPilot(a);
     A.setPilot(c);
+
     
     
 }

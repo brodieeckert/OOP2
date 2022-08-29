@@ -2,12 +2,6 @@
 #include "Airplane.h"
 
 using namespace std;
-
-Person::Person(int salary, string name){
-    this->_name=name;
-    this->_salary = salary;
-}
-
 Airplane::Airplane(string callsign, Person thePilot, Person theCoPilot){
     _Pilot = thePilot;
     _CoPilot = theCoPilot;
