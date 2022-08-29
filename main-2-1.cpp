@@ -25,7 +25,6 @@ int main(){
     A.addCapybara(c);
     A.addCapybara(d);
     A.addCapybara(e);
-    cout << "hi" << endl;
 
     return 0;
 }
