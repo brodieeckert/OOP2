@@ -2,6 +2,7 @@
 #include "Airplane.h"
 
 using namespace std;
+
 Airplane::Airplane(string callsign, Person thePilot, Person theCoPilot){
     _Pilot = thePilot;
     _CoPilot = theCoPilot;

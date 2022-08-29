@@ -22,3 +22,5 @@ void Person::setSalary(int salary){
 void Person::setName(string name){
     this->_name = name;
 }
+
+Person::~Person(){}
