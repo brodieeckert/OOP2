@@ -14,3 +14,4 @@ class Wagon: public Capybara{
         bool addCapybara(Capybara newCapy);
         void emptyWagon();
         void printCapybaras();
+}
