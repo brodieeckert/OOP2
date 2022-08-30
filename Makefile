@@ -10,5 +10,5 @@ wagon:
 	g++ main-2-1.cpp Wagon.h Wagon.cpp Capybara.cpp
 	./a.exe
 airplane:
-	g++ main-2-2.cpp Airplane.h  Person.h Person.cpp Airplane.cpp 
+	g++ main-2-2.cpp Person.h Person.cpp Airplane.h  Airplane.cpp 
 	./a.exe
