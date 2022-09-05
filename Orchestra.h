@@ -1,0 +1,23 @@
+#include <string>
+#include <iostream>
+#include "Musician.h"
+
+
+using namespace std;
+
+class Orchestra{
+    private:
+    int size;
+    int members;
+    Musician* musicians = new Musician[size];
+
+    public:
+    Orchestra();
+    Orchestra(int size);
+    int get_current_number_of_members();
+    bool has_instrument(string instrument);
+    Musician *get_members();
+
+    bool add_musician(Musician new_musician);
+    
+};
