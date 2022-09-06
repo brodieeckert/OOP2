@@ -1,6 +1,5 @@
 #include <string>
 #include <iostream>
-#include "Musician.h"
 
 
 using namespace std;
@@ -8,7 +7,7 @@ using namespace std;
 class Orchestra{
     private:
     int size;
-    int members;
+    int members = 0;
     Musician* musicians = new Musician[size];
 
     public:
@@ -19,5 +18,6 @@ class Orchestra{
     Musician *get_members();
 
     bool add_musician(Musician new_musician);
-    
+
+    ~Orchestra(){}
 };

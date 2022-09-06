@@ -1,3 +1,4 @@
+#include "Musician.h"
 #include "Orchestra.h"
 
 using namespace std;
@@ -11,8 +12,13 @@ int Orchestra::get_current_number_of_members(){
 }
 
 bool Orchestra::add_musician(Musician new_musician){
-    if (get_current_number_of_members() > this->size){return false;}
+    if (get_current_number_of_members() >= this->size){
+        cout << "Orchestra is full" << endl;
+        return false;
+        }
     this->musicians[members] = new_musician;
+    this->members++;
+    return true;
 
 }
 
@@ -27,4 +33,3 @@ bool Orchestra::has_instrument(string instrument){
 Musician* Orchestra::get_members(){
     return musicians;
 }
-Orchestra::~Orchestra(){}
