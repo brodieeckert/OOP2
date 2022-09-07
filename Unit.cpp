@@ -1,3 +1,4 @@
+
 #include "Unit.h"
 
 Unit::Unit(){
@@ -7,9 +8,9 @@ Unit::Unit(){
 
 }                                            // a default constructor 
 Unit::Unit(int unit_val,int num_beds,double unit_size){
-    this->num_beds = num_beds;
-    this->unit_size = unit_size;
-    this->unit_val = unit_val;
+    if(num_beds>0){this->num_beds = num_beds;}
+    if(unit_size>0){this->unit_size = unit_size;}
+    if(unit_val>0){this->unit_val = unit_val;}
 }   // a constructor that takes: the value in dollars,
                                                       // number of bedrooms, and number of square meters as parameters
 
