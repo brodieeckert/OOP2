@@ -1,4 +1,5 @@
-
+#ifndef UNIT.H
+#define UNIT.H
 
 class Unit{
     private:
@@ -15,3 +16,4 @@ class Unit{
         int get_value();                                      // returns the value in dollars of the Unit
         double get_area();                                    // returns the number of square meters in the unit
 };
+#endif
