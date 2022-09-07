@@ -2,7 +2,7 @@
 #include "Unit.h"
 
 ApartmentBuilding::ApartmentBuilding(){
-    this->capacity = 0;
+    this->capacity = 10;
 };    
 ApartmentBuilding::ApartmentBuilding(int capacity){
     this->capacity = capacity;
