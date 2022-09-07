@@ -24,4 +24,8 @@ bool ApartmentBuilding::add_unit(Unit unit){
     }
     return false;
 }
-~ApartmentBuilding::ApartmentBuilding();
+
+ApartmentBuilding::~ApartmentBuilding()
+{
+}
+
