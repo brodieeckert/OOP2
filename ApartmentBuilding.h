@@ -1,5 +1,9 @@
-#ifndef "Unit.h"
+#ifndef AprtmentBuilding.H
+#define AprtmentBuilding.H
 #include "Unit.h"
+
+#include <string>
+#include <iostream>
 
 class ApartmentBuilding
 {
@@ -8,7 +12,7 @@ private:
     int units;
     Unit* rooms = new Unit[capacity];
 public:
-    ApartmentBuilding(int capacity);    
+    ApartmentBuilding();    
     ApartmentBuilding(int capacity);
     int get_capacity();
     int get_current_number_of_units(); 
