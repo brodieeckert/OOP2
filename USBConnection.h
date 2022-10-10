@@ -6,8 +6,6 @@ class USBConnection
 private:
     int id;
     static int count;
-
-    static int count;
     USBConnection(){ id = USBConnection::count++;};
 
 public:
@@ -26,7 +24,7 @@ public:
     }
     ~USBConnection();
 };
-int  USBConnection::count = 0;
+int  USBConnection::count = 0;  
 
 USBConnection::~USBConnection()
 {
