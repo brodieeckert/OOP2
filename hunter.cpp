@@ -22,5 +22,5 @@ void hunter::set_kills(int k){
 }
 
 string hunter::get_name(){
-    return "Hunter:" + this->name; 
+    return "Hunter: " + this->name; 
 }
