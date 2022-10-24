@@ -15,8 +15,5 @@ void sort_by_animalID::sort(animal **animals,int n){
         // Last i elements are already in place
         for (j = 0; j < n - i - 1; j++)
             if (animals[j]->get_animalID() > animals[j + 1]->get_animalID())
-                buffer = animals[j];
-                animals[j] = animals[j + 1];
-                animals[j+ 1 ] = buffer;
-                buffer = nullptr;
+                swap(animals[j],animals[j+1]);
 }	// sorts the array of n animals into ascending order using their animalIDs
