@@ -1,3 +1,5 @@
+#ifndef ZOO_H
+#define ZOO_H
 #include <string.h>
 #include <iostream>
 #include "animal.h"
@@ -27,3 +29,5 @@ zoo::zoo(/* args */)
 zoo::~zoo()
 {
 }
+
+#endif

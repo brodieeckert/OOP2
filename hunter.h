@@ -1,3 +1,6 @@
+#ifndef HUNTER_H
+#define HUNTER_H
+
 #include <string.h>
 #include <iostream>
 #include "animal.h"
@@ -20,4 +23,5 @@ public:
     ~hunter();
 };
 
+#endif
 

@@ -1,3 +1,6 @@
+#ifndef VEGIE_H
+#define VEGIE_H
+
 #include <string.h>
 #include <iostream>
 #include "animal.h"
@@ -19,3 +22,4 @@ public:
 };
 
 
+#endif
