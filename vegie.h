@@ -18,7 +18,7 @@ public:
     void set_favourite_food(string f);
     string get_name();
     vegie(string n, int v);  // create a hunter with name n and body volume v
-    ~vegie();
+
 };
 
 

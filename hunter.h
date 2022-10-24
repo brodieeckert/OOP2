@@ -20,7 +20,7 @@ public:
 
 
     hunter(string n, int v);  // create a hunter with name n and body volume v
-    ~hunter();
+
 };
 
 #endif

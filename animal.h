@@ -20,7 +20,7 @@ public:
     virtual string get_name() = 0;
     int get_volume();
     int get_animalID();
-    ~animal();
+
 };
 
 #endif

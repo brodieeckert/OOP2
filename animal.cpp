@@ -9,7 +9,7 @@ animal::animal(string n, int v)
     this->volume = v;
 }
 
-animal::~animal()
+animal::animal()
 {
     this->name = "No Name";
     this->volume = 0;
