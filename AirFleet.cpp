@@ -15,7 +15,8 @@ int AirFleet::get_count(){
 }                 // Returns the amount of AirCrafts added to the fleet
 AirFleet* AirFleet::createFleet(int authority){
     if(authority == 10){
-        AirFleet newfleet();
+        AirFleet*  newfleet = new AirFleet;
+        return newfleet;
     }
     return nullptr;
 }
