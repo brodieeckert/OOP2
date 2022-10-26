@@ -8,7 +8,7 @@ AirCraft::AirCraft(int w){
     this->weight = w;
 }
 void  AirCraft::refuel(){
-
+    this->fuel = 100;
 }               // Resets fuel back to 100%
 void  AirCraft::set_fuel(float f){
     this->fuel = f;
