@@ -30,10 +30,10 @@ void Helicopter::fly(int headwind, int minutes){
     int OvrWeight = (this->weight-5670)*0.01;
 
     if(headwind >=40){
-        this->fuel = (0.4+OvrWeight)*this->fuel * minutes;
+        this->fuel = this->fuel-((0.4+OvrWeight)*this->fuel * minutes);
     }
     if(headwind < 40){
-        this->fuel = (0.2+OvrWeight)*this->fuel * minutes;
+        this->fuel = this->fuel-((0.2+OvrWeight)*this->fuel * minutes);
     }
     if(this->fuel > old_fuel*0.2){
         this->numberOfFlights++;
