@@ -49,5 +49,7 @@ void Helicopter::fly(int headwind, int minutes){
         this->numberOfFlights++;
 
     }
+    else{ this->fuel = 100;}
+
       
 }         // headwind in km/h and minutes (time flying)
