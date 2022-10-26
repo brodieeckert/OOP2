@@ -27,19 +27,21 @@ int Airplane::get_numPassengers(){
 }
 
 void Airplane::fly(int headwind, int minutes){
-    float old_fuel = this->fuel;
 
+        float old_fuel = this->fuel;
 
     if(headwind >=60){
-        this->fuel = this->fuel-((0.5+this->numPassengers*0.001)*this->fuel * minutes);
+        this->fuel = this->fuel-(0.5*minutes)-(0.001*this->numPassengers*minutes);
     }
     if(headwind < 60){
-        this->fuel = this->fuel-((0.3+this->numPassengers*0.001)*this->fuel * minutes);
+        this->fuel = this->fuel-(0.3*minutes)-(0.001*this->numPassengers*minutes);
+
     }
     if(this->fuel > old_fuel*0.2){
         this->numberOfFlights++;
 
     }
     else{ this->fuel = old_fuel;}
+
     
 }         // headwind in km/h and minutes (time flying)
