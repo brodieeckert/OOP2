@@ -40,6 +40,6 @@ void Airplane::fly(int headwind, int minutes){
         this->numberOfFlights++;
 
     }
-    else{ this->fuel = 100}
+    else{ this->fuel = 100;}
     
 }         // headwind in km/h and minutes (time flying)
