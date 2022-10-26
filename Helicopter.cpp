@@ -4,6 +4,7 @@ int Helicopter::heliID = 0;
 
 Helicopter::Helicopter(){}
 Helicopter::Helicopter(int w, string n){
+    this->fuel = 100;
     this->name = n;
     this->weight = w;
     this->craftID = heliID;         //mabye change order
@@ -26,13 +27,13 @@ void Helicopter::set_name(string n){
 void Helicopter::fly(int headwind, int minutes){
     float old_fuel = this->fuel;
 
-    int OvrWeight = (this->weight-5670)*0.0001;
+    int OvrWeight = (this->weight-5670)*0.01;
 
     if(headwind >=40){
-        this->fuel = (0.004+OvrWeight)*this->fuel * minutes;
+        this->fuel = (0.4+OvrWeight)*this->fuel * minutes;
     }
     if(headwind < 40){
-        this->fuel = (0.002+OvrWeight)*this->fuel * minutes;
+        this->fuel = (0.2+OvrWeight)*this->fuel * minutes;
     }
     if(this->fuel > old_fuel*0.2){
         this->numberOfFlights++;

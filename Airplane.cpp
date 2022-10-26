@@ -8,6 +8,8 @@ Airplane::Airplane(/* args */){
 
 }
 Airplane::Airplane(int w, int p){
+    this->fuel = 100;
+
     this->weight = w;
     this->numPassengers = p;
 
@@ -29,10 +31,10 @@ void Airplane::fly(int headwind, int minutes){
 
 
     if(headwind >=60){
-        this->fuel = (0.005+this->numPassengers*0.001)*this->fuel * minutes;
+        this->fuel = (0.5+this->numPassengers*0.1)*this->fuel * minutes;
     }
     if(headwind < 60){
-        this->fuel = (0.003+this->numPassengers*0.001)*this->fuel * minutes;
+        this->fuel = (0.3+this->numPassengers*0.1)*this->fuel * minutes;
     }
     if(this->fuel > old_fuel*0.2){
         this->numberOfFlights++;

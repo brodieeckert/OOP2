@@ -23,5 +23,4 @@ AirFleet* AirFleet::createFleet(int authority){
 AirFleet::AirFleet(){
     this->fleet = new AirCraft*[5];
     
-
 }
