@@ -27,9 +27,9 @@ void Helicopter::set_name(string n){
 void Helicopter::fly(int headwind, int minutes){
     float old_fuel = this->fuel;
 
-    float OvrWeight = (this->weight-5670)*0.01;
-    if (this->weight < 5690){
-        OvrWeight = 0;
+    float OvrWeight = 0;
+    if(this->weight > 5670){
+        OvrWeight(this->weight-5670)*0.01;
     }
 
     if(headwind >=40){
