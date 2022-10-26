@@ -5,6 +5,7 @@ int Helicopter::heliID = 0;
 Helicopter::Helicopter(){}
 Helicopter::Helicopter(int w, string n){
     this->fuel = 100;
+    this->numberOfFlights = 0;
     this->name = n;
     this->weight = w;
     this->craftID = heliID;         //mabye change order
