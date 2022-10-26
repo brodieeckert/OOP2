@@ -11,13 +11,14 @@ protected:
 
 public:
     AirCraft();
+    AirCraft(int w);
     void refuel();            // Resets fuel back to 100%
     void set_fuel(float f); 
     float get_fuel();
     void set_weight(int w);
     int get_weight();
-    void set_numberofFlights(int n);
-    int get_numberofFlights();
+    void set_numberOfFlights(int n);
+    int get_numberOfFlights();
 
     virtual void fly(int headwind, int minutes) = 0;         // headwind in km/h and minutes (time flying)
 };

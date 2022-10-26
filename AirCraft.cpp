@@ -4,6 +4,9 @@
 
 
 AirCraft::AirCraft(){};
+AirCraft::AirCraft(int w){
+    this->weight = w;
+}
 void  AirCraft::refuel(){
 
 }               // Resets fuel back to 100%
@@ -19,9 +22,9 @@ void  AirCraft::set_weight(int w){
 int  AirCraft::get_weight(){
     return this->weight;
 }
-void  AirCraft::set_numberofFlights(int n){
+void  AirCraft::set_numberOfFlights(int n){
     this->numberOfFlights = n;
 }
-int  AirCraft::get_numberofFlights(){
+int  AirCraft::get_numberOfFlights(){
     return this->numberOfFlights;
 }
