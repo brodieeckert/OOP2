@@ -29,7 +29,7 @@ void Helicopter::fly(int headwind, int minutes){
 
     float OvrWeight = (this->weight-5670)*0.01;
     if (this->weight < 5690){
-        OvrWeight = 1;
+        OvrWeight = 0;
     }
 
     if(headwind >=40){
